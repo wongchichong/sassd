@@ -1,0 +1,8 @@
+import globalClassNames from '..\fbasestyle.d';
+declare const classNames: typeof globalClassNames & {
+    readonly centertable: 'centertable';
+    readonly right: 'right';
+    readonly bdr: 'bdr';
+    readonly bdrNone: 'bdrNone';
+};
+export = classNames;

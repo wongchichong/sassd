@@ -1,0 +1,158 @@
+﻿// @import '../../styles/src/base.scss';
+// @import 'styles/src/base.scss';
+@import './base.scss';
+
+.bz-banner {
+    /* webpackIgnore: true */
+    background           : url(/assets/images/page/banner.jpg);
+    border               : 1px solid black;
+    border-collapse      : collapse;
+    /* border-radius     : 10px; */
+    font-size            : 200%;
+    padding              : 10px;
+    font-weight          : bold;
+    /* font-family       : 'YaHei'; */
+    // margin-top        : 10px;
+    // margin-bottom     : 5px;
+    display              : block;
+    align-items          : center;
+    margin               : 0 auto 10px;
+    width                : 210mm;
+
+    img[alt="logo"] {
+        width         : 1.5em;
+        vertical-align: middle;
+        display       : inline-block;
+    }
+}
+
+.qm-banner {
+    /* webpackIgnore: true */
+    background           : url(/assets/images/page/qmBanner.jpg);
+    border               : 1px solid black;
+    border-collapse      : collapse;
+    /* border-radius     : 10px; */
+    font-size            : 200%;
+    padding              : 10px;
+    font-weight          : bold;
+    /* font-family       : 'YaHei'; */
+    // margin-top        : 10px;
+    // margin-bottom     : 5px;
+    display              : block;
+    align-items          : center;
+    margin               : 0 auto;
+    margin               : 0 auto 10px;
+
+    img[alt="logo"] {
+        width         : 1.5em;
+        vertical-align: middle;
+        display       : inline-block;
+    }
+}
+
+.bannerText {
+    color       : white;
+    display     : inline;
+    text-shadow : 1px 2px 2px #000;
+    padding-left: 1rem;
+}
+
+@media print {
+    .bzUserBanner {
+        div {
+            display        : flex;
+            justify-content: center;
+        }
+    }
+
+    .qmUserBanner {
+        div {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+        }
+    }
+}
+
+@media screen {
+    .bzUserBanner {
+        margin: 0 auto;
+    }
+
+    .qmUserBanner {
+        margin: 0 auto;
+    }
+}
+
+.bzUserBanner {
+    width : 210mm;
+    height: 7rem;
+
+    background        : url(/assets/images/page/banner.jpg);
+    border            : 1px solid black;
+    border-collapse   : collapse;
+    /* border-radius  : 10px; */
+    font-size         : 200%;
+    padding           : 10px;
+
+    /* font-weight    : bold; */
+    /* font-family    : 'YaHei'; */
+}
+
+.qmUserBanner {
+    width : 210mm;
+    height: 7rem;
+
+    background        : url(/assets/images/page/qmBanner.jpg);
+    border            : 1px solid black;
+    border-collapse   : collapse;
+    /* border-radius  : 10px; */
+    font-size         : 200%;
+    padding           : 10px;
+    /* font-weight    : bold; */
+    /* font-family    : 'YaHei'; */
+}
+
+// @media print {
+//     .userBanner {
+//         width  : fit-content;
+//         height : fit-content;
+//         margin : 0 auto;
+//         padding: 10px;
+//     }
+// }
+
+.text-base {
+    font-size  : 1rem;
+    /* 16px */
+    line-height: 1.5rem;
+}
+
+.no-border {
+    border: none;
+}
+
+@include width(5rem);
+@include width(7rem);
+@include width(30rem);
+@include cursor(pointer);
+@include cursor(default);
+@include vertical-align(bottom);
+@include display(inline);
+@include display(inline-block);
+@include padding-left(0);
+@include padding-left(1rem);
+@include margin(0);
+@include margin(0.5rem);
+@include margin-top(-3rem);
+@include margin-bottom(-1rem);
+@include text-align(left);
+@include font-size(3rem);
+
+@media print {
+    @include margin-top(558px);
+
+    .no-background {
+        background-image: none;
+    }
+}
