@@ -1,6 +1,6 @@
 {
     "name": "sass-d",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Generating Sass module declaration .d.ts",
     "bin": {
         "sassd": "cli/index.js"
