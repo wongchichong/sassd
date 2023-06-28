@@ -1,4 +1,1 @@
-./src/*
-./styles/*
 ./node_modules/*
-nodemon.json
