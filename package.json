@@ -8,8 +8,7 @@
     "scripts": {
         "build": "vite build",
         "test": "nodemon --config nodemon.json",
-        "test:nocss": "node cli/index.js ./styles --deleteCss",
-        "publish": "npm publish --access=public"
+        "test:nocss": "node cli/index.js ./styles --deleteCss"
     },
     "keywords": [],
     "author": "Wong Chi Chong",
