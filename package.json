@@ -1,6 +1,6 @@
 {
-    "name": "sassd",
-    "version": "1.0.0-beta",
+    "name": "@wongchichong/sassd",
+    "version": "1.0.0",
     "description": "Generating Sass module declaration .d.ts",
     "bin": {
         "sassd": "cli/index.js"
@@ -8,7 +8,8 @@
     "scripts": {
         "build": "vite build",
         "test": "nodemon --config nodemon.json",
-        "test:nocss": "node cli/index.js ./styles --deleteCss"
+        "test:nocss": "node cli/index.js ./styles --deleteCss",
+        "publish": "npm publish --access=public"
     },
     "keywords": [],
     "author": "Wong Chi Chong",
