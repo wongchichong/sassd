@@ -1,0 +1,303 @@
+@charset "UTF-8";
+.footerSpace {
+  height: 50px;
+}
+
+.header {
+  display: none;
+  position: fixed;
+  top: 0mm;
+  width: 100%;
+  border-bottom: 1px solid black;
+  background: linear-gradient(to right, rgb(245, 241, 144), rgb(238, 64, 153));
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.footer {
+  height: 50px;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 4em;
+  margin: 2px;
+}
+
+.headerText {
+  float: right;
+  display: block;
+}
+span .headerText {
+  float: right;
+  font-size: 1.2em;
+  font-family: "YaHei";
+  display: block;
+  line-height: 1em;
+  margin: 1px 10px 0 0;
+  color: white;
+}
+
+.footerText {
+  float: right;
+  display: block;
+}
+span .footerText {
+  float: right;
+  font-size: 1em;
+  font-family: "YaHei";
+  display: block;
+  line-height: 1em;
+  /* text-shadow: 0px 1px #ffffff; */
+  margin: 1px 10px 0 0;
+  color: darkblue;
+}
+
+.paper, .watermarkPaper {
+  border: solid 1px #555;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 12px;
+}
+
+.watermark, .watermarkPaper {
+  /* webpackIgnore: true */
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/assets/images/logo-blue-full-padding.svg) center no-repeat;
+  padding: 6px 30px 10px 20px;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.page, .pageCenter {
+  max-width: 210mm;
+}
+
+@media print {
+  .page, .pageCenter {
+    width: 100%;
+    height: 100%;
+    min-height: 292mm;
+    break-after: always !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+    /* width           : 21cm;
+    min-height      : 29.7cm;
+    padding      : 2cm;
+    margin       : 1cm auto;
+    border          : 1px #D3D3D3 solid;
+    border-radius   : 5px;
+    background      : white;
+    box-shadow      : 0 0 5px rgba(0, 0, 0, 0.1); */
+    height: 100%;
+    position: relative;
+    top: 12px;
+    left: -2px;
+    /* border             : 1px #D3D3D3 solid; */
+    /* border-radius      : 5px; */
+    /* box-shadow         : 0 0 5px rgb(0 0 0 / 10%); */
+    /* webpackIgnore: true */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .page::before, .pageCenter::before {
+    content: "Copyright© 2022 by Supreme Fortunity Sdn Bhd";
+    display: inline-block;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #821A00;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+  }
+  .page::after, .pageCenter::after {
+    counter-increment: page;
+    content: "Page " counter(page);
+    color: #821A00;
+    display: inline-block;
+    font-size: 0.8em;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+  }
+}
+.center, .pageCenter {
+  margin: 0 auto;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.height1 {
+  height: 1px;
+}
+
+.widthPaper {
+  width: 210mm;
+}
+
+@media screen {
+  .printOnly {
+    display: none;
+  }
+}
+@media print {
+  .printOnly {
+    display: block;
+    /* must use block*/
+  }
+}
+@media print {
+  .screenOnly {
+    display: none !important;
+  }
+}
+@media print {
+  .noBackground {
+    background-image: unset !important;
+  }
+}
+@media print {
+  .breakBefore {
+    break-before: always !important;
+    page-break-before: always !important;
+    page-break-inside: avoid !important;
+  }
+}
+@media print {
+  .pageOnly {
+    width: 100%;
+    height: 100%;
+    min-height: 297mm;
+    break-after: always !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+    /* width           : 21cm;
+    min-height      : 29.7cm;
+    padding      : 2cm;
+    margin       : 1cm auto;
+    border          : 1px #D3D3D3 solid;
+    border-radius   : 5px;
+    background      : white;
+    box-shadow      : 0 0 5px rgba(0, 0, 0, 0.1); */
+  }
+}
+.copyright {
+  display: inline-block;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 2px 1px black;
+  position: absolute;
+  bottom: 3em;
+  left: 5px;
+}
+
+/* .page::before {
+    content     : "22个人专属运程报告书\a02Professional Personalized Luck Report";
+    white-space : pre;
+    writing-mode: horizontal-tb;
+
+} */
+@media print {
+  .end {
+    width: 100%;
+    display: block;
+    break-after: always !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+    padding: 0;
+    height: 292mm;
+  }
+  .end img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    break-after: always !important;
+    page-break-after: always !important;
+    page-break-inside: avoid !important;
+  }
+}
+/* .page {
+    margin          : 0;
+    border          : initial;
+    border-radius   : initial;
+    width           : initial;
+    min-height      : initial;
+    box-shadow      : initial;
+    background      : initial;
+    page-break-after: always;
+} */
+.coverBackground {
+  height: 100%;
+  min-height: 297mm;
+  min-width: 210mm;
+  position: relative;
+  left: -2px;
+  border: 1px #D3D3D3 solid;
+  background: white;
+  margin-bottom: -100px;
+}
+
+.coverFooter {
+  position: absolute;
+  bottom: 0;
+  /* width   : 100%; */
+}
+
+.text-base {
+  font-size: 1rem;
+  /* 16px */
+  line-height: 1.5rem;
+}
+
+@media screen {
+  .main {
+    padding: 0;
+    padding-top: 60px;
+    height: 100%;
+    position: absolute;
+  }
+}
+@media print {
+  .main {
+    padding: 0;
+    height: 100%;
+    position: absolute;
+  }
+}
+.wfit-content {
+  width: fit-content;
+}
+
+.w-210mm {
+  width: 210mm;
+}
+
+.red {
+  color: red;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.m-12px {
+  margin: 12px;
+}
+
+/*# sourceMappingURL=page.module.css.map */

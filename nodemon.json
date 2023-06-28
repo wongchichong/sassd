@@ -1,0 +1,6 @@
+{
+    "watch": [
+        "cli/index.js"
+    ],
+    "exec": "node cli/index.js ./styles"
+}

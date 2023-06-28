@@ -1,0 +1,29 @@
+﻿.centertable {
+    margin    : auto;
+    display   : table;
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.bdr {
+
+    &,
+    &>tbody>tr,
+    &>tbody>tr>td {
+        border         : 1px solid gray;
+        border-collapse: collapse;
+    }
+
+}
+
+.bdrNone {
+
+    &,
+    tr,
+    td {
+        border: none;
+    }
+}

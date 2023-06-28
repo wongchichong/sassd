@@ -1,0 +1,275 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "KaiTi";
+  /* webpackIgnore: true */
+  src: url(/assets/font/JKT.woff2);
+}
+ul {
+  /* list-style       : none; */
+  /* width         : 300px; */
+  /* text-indent   : -24px;
+  margin-left      : 24px; */
+}
+
+li {
+  /* line-height    : 2em; */
+  list-style-type: disc;
+  /* text-indent : -20px;
+  margin-left    : 20px; */
+}
+
+rt {
+  font-size: 40%;
+  padding-top: 3px;
+}
+
+body.print * {
+  transition: none !important;
+}
+
+.MuiSelect-select.MuiSelect-select {
+  padding: 0px 22px 0 0px;
+}
+
+.btn.tgme_widget_login_button {
+  font-size: unset;
+  padding: unset;
+  border-radius: 4px;
+  width: 16em;
+  margin: 0 0 13px 0;
+  text-align: left;
+  box-shadow: 0px 3px -1px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.tgme_widget_login_button_icon {
+  margin: 0 -2px;
+}
+
+.tgme_widget_login_user_photo {
+  display: none;
+}
+
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+dialog.mdl-dialog.firebaseui-dialog.firebaseui-id-dialog {
+  height: fit-content !important;
+}
+
+@page {
+  size: a4;
+  /* 210mm 297mm; */
+  /* 7in 9.25in; */
+  /* margin: 27mm 16mm 27mm 16mm; */
+  margin: 0;
+  margin-top: -90px;
+}
+body {
+  margin: 0;
+}
+
+@media print {
+  body {
+    counter-reset: page;
+  }
+}
+.star {
+  list-style-type: "✧";
+}
+
+/* 
+@font-face {
+font-family: 'KaiTi';
+src        : url(/font/Microsoft-YaHei-Bold-Font.ttf');
+} */
+/* put in page */
+body.darkTheme {
+  --name: dark;
+  --background: white;
+  --outter: #514426;
+  --内盘: #62563a;
+  --外盘: #a79567;
+  --内盘宫: #FEFACB99;
+  --外盘宫: #ffffff77;
+  --内盘字: #dfc8ba;
+  --金bg: #f5efedce;
+  --木bg: #A5D6A788;
+  --水bg: #BCAAA488;
+  --火bg: #EF9A9A88;
+  --土bg: #fff16e88;
+  --木: #0C6F10;
+  --火: #F52C37;
+  --土: #9b870c;
+  --金: #5E6D76;
+  --水: #2113D6;
+  --时: #4CAF50;
+  --日: #4CAF50;
+  --阴: #ab0f0f;
+  --line: #514426;
+  --lineWidth: 4px;
+  --字: #2e2d2c;
+  --空: #dfc8ba;
+  /* --凶  : black; */
+  --平: green;
+  --吉bg: rgb(255, 204, 204);
+  --凶bg: rgb(187, 187, 187);
+  --大吉: red;
+  --吉: purple;
+  /* red */
+  --小吉: green;
+  --凶: gray;
+  --大凶: black;
+}
+
+:root {
+  --name: light;
+  --background: white;
+  --outter: #514426;
+  --内盘: #62563a;
+  --外盘: #a79567;
+  --内盘宫: #FEFACB99;
+  --外盘宫: #ffffff77;
+  --内盘字: #dfc8ba;
+  --金bg: #f5efedce;
+  --木bg: #A5D6A788;
+  --水bg: #BCAAA488;
+  --火bg: #EF9A9A88;
+  --土bg: #fff16e88;
+  --木: #0C6F10;
+  --火: #F52C37;
+  --土: #9b870c;
+  --金: #5E6D76;
+  --水: #2113D6;
+  --时: #4CAF50;
+  --日: #4CAF50;
+  --阴: #ab0f0f;
+  --line: #514426;
+  --lineWidth: 4px;
+  --字: #2e2d2c;
+  --空: #dfc8ba;
+  /* --凶  : black; */
+  --平: green;
+  --吉bg: rgb(255, 204, 204);
+  --凶bg: rgb(187, 187, 187);
+  --大吉: red;
+  --吉: purple;
+  /* red */
+  --小吉: green;
+  --凶: gray;
+  --大凶: black;
+}
+
+/*
+// const useTheme_ = (namespace?: string) => {
+//     const [theme, setTheme] = useState(lightTheme)
+//     const cssTheme = useMemo(() => makeCssTheme(theme), [theme])
+
+//     return {
+//         get theme() { return theme }, set theme(val) { setTheme(val) },
+//         cssTheme
+//     }
+// }
+// .useTheme = () => useBetween(useTheme_)
+*/
+.木 {
+  color: var(--木);
+}
+
+.火 {
+  color: var(--火);
+}
+
+.土 {
+  color: var(--土);
+}
+
+.金 {
+  color: var(--金);
+}
+
+.水 {
+  color: var(--水);
+}
+
+.telegramLoginButton {
+  text-align: center;
+}
+
+.telegramLinkButton {
+  width: 15em;
+  display: block;
+  margin: 0 0 20px 0;
+  justify-content: flex-start;
+  border-radius: 4px;
+  box-shadow: 0px 3px -1px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.telegramLinkButton #telegram-login-SupremeDivinityBot {
+  height: 32px !important;
+}
+
+.deleteAccountIcon {
+  width: 1em;
+  fill: red;
+  cursor: pointer;
+  margin: 0 5px 3px 0;
+}
+
+.userInfoLink {
+  /* span.userinfo.links { */
+  display: block;
+  padding: 0 0 0 10px;
+}
+.userInfoLink.text {
+  display: inline;
+  position: absolute;
+  padding: 1px 0 0 7px;
+}
+
+.男icon {
+  height: 1.2em;
+}
+
+.女icon {
+  height: 1.2em;
+}
+
+/* button.性.键 { */
+.性键 {
+  width: 5em;
+  margin: 1.6em 0 0 0;
+}
+
+div .性键字英 {
+  font-size: 60%;
+}
+
+.文件dialog {
+  padding: 10px;
+}
+
+.centertable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .watermark {
+height             : 200px;
+width              : 200px;
+background-image   : url(path/to/image/to/be/watermarked.png);
+background-position: 0 0;
+background-repeat  : no-repeat;
+position           : relative;
+} */
+/* .paper {
+@extend% paper
+} */
+
+/*# sourceMappingURL=core.module.css.map */
