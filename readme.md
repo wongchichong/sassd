@@ -1,4 +1,4 @@
-# sassd
+# sass-d
 
 Generate TypeScript definitions (.d.ts) for SCSS module (*.module.scss). 
 
