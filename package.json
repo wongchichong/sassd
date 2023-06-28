@@ -2,15 +2,17 @@
     "name": "sassd",
     "version": "1.0.0-beta",
     "description": "Generating Sass module declaration .d.ts",
-    "bin": "./cli/index.js",
+    "bin": {
+        "sassd": "cli/index.js"
+    },
     "scripts": {
         "build": "vite build",
         "test": "nodemon --config nodemon.json",
         "test:nocss": "node cli/index.js ./styles --deleteCss"
     },
     "keywords": [],
-    "author": "",
-    "license": "ISC",
+    "author": "Wong Chi Chong",
+    "license": "MIT",
     "dependencies": {
         "chalk": "^4.0.0",
         "fb-watchman": "^2.0.2",
@@ -22,7 +24,15 @@
         "@types/node": "^20.3.2",
         "@types/yargs": "^17.0.24",
         "nodemon": "^2.0.22",
-        "vite": "^4.3.9",
-        "vite-plugin-node-polyfills": "^0.9.0"
-    }
+        "vite": "^4.3.9"
+    },
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/wongchichong/sassd.git"
+    },
+    "bugs": {
+        "url": "https://github.com/wongchichong/sassd/issues"
+    },
+    "homepage": "https://github.com/wongchichong/sassd#readme"
 }
