@@ -1,5 +1,5 @@
 {
-    "name": "@wongchichong/sassd",
+    "name": "sass-d",
     "version": "1.0.0",
     "description": "Generating Sass module declaration .d.ts",
     "bin": {
