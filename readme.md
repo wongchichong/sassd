@@ -2,11 +2,7 @@
 
 Generate TypeScript definitions (.d.ts) for SCSS module (*.module.scss). 
 
-By using 
-
-[sass](https://sass-lang.com/) and
-
-[typed-css-modules](https://www.npmjs.com/package/typed-css-modules)
+By using [sass](https://sass-lang.com/) and [typed-css-modules](https://www.npmjs.com/package/typed-css-modules)
 
 
 If the following library does't work as expected, then try sassd.
