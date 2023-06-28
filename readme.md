@@ -13,8 +13,8 @@ If the following library does't work as expected, then try sassd.
 
 ## Installation
 ```bash
-pnpm add -g sass typed-css-modules sassd
-yarn add -g sass typed-css-modules sassd
+pnpm add -g sass typed-css-modules sass-d
+yarn add -g sass typed-css-modules sass-d
 ```
 
 ## Excuting
