@@ -50,7 +50,7 @@ function compileSassFiles(args: Args) {
         ...a } = args
 
     const sassFiles = findSassFiles(folder, recursive)
-    console.log("compileSassFiles", folder, console.log(JSON.stringify(args)))
+    // console.log("compileSassFiles", folder, console.log(JSON.stringify(args)))
     // return
 
     sassFiles.forEach((sassFile) => {
@@ -190,6 +190,7 @@ function checkSass() {
     const sassCommand = `sass --version`
     let res: string
     try {
+        console.log('Sass version:')
         res = execSync(sassCommand, { stdio: 'inherit' })
         return true
     }
@@ -205,6 +206,7 @@ function checkTcm() {
     const sassCommand = `tcm --version`
     let res: string
     try {
+        console.log('typed-css-modules version:')
         res = execSync(sassCommand, { stdio: 'inherit' })
         return true
     }

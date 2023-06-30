@@ -17,7 +17,7 @@ pnpm add -g sass typed-css-modules sass-d
 yarn add -g sass typed-css-modules sass-d
 ```
 
-## Excuting
+## Excuting sassd not -d (npm naming thingy)
 ```bash
 sassd ./styles --deleteCss
 ```
