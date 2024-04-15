@@ -7,7 +7,7 @@
         "sassd": "cli/index.js"
     },
     "scripts": {
-        "release": "pnpm version patch && git add . && git commit -m 'Bump version' && pnpm publish",
+        "release": "git add . && git commit -m \"Bump version\" git push && pnpm version patch && pnpm publish",
         "build": "vite build",
         "test": "nodemon --config nodemon.json",
         "test:nocss": "node cli/index.js ./styles --deleteCss"
