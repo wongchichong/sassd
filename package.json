@@ -1,6 +1,6 @@
 {
     "name": "sass-d",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Generating Sass module declaration .d.ts",
     "type": "module",
     "bin": {
