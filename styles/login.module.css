@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.loginDialog {
+  width: 21em;
+}
+
+.loginButton {
+  width: 20em;
+  text-transform: unset;
+  text-align: left;
+  justify-content: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.loginButton:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+.loginButton img {
+  vertical-align: top;
+}
+
+.more {
+  float: right;
+  text-decoration: underline;
+  color: blue;
+}
+
+.center {
+  text-align: center;
+}
+
+.inputForm {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  width: 16em;
+}
+
+.sms {
+  font-size: 0.8em;
+  text-transform: none;
+  height: 2em;
+  float: right;
+}
+
+.emailNew {
+  font-size: 0.8em;
+  text-transform: none;
+  height: 2em;
+}
+
+.other {
+  /* 
+  .性.button {
+      height: 4em;
+  }
+
+  .性.button span {
+      height: 2em;
+  } */
+}
+.other div.login.button.phone div, .other div.login.button.email div {
+  margin-bottom: 5px;
+}
+.other .姓名.域 {
+  width: 23em;
+}
+.other .provider {
+  /* empty */
+}
+.other .icon {
+  /* icon */
+}
+
+.w-7rem {
+  width: 7rem;
+}
+
+/*# sourceMappingURL=login.module.css.map */

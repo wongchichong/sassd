@@ -1,10 +1,13 @@
 import { execSync } from 'child_process'
 import { unlinkSync } from 'fs'
 import { resolve, extname } from 'path'
-import glob from 'glob'
-import yargs from 'yargs'
+import * as glob from 'glob'
+import _yargs from 'yargs'
 import watchman from 'fb-watchman'
 import chalk from 'chalk'
+import { hideBin } from 'yargs/helpers'
+
+const yargs = _yargs(hideBin(process.argv));
 
 interface Args {
     folder: string

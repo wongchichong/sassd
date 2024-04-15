@@ -1,0 +1,200 @@
+@charset "UTF-8";
+.三胜宫header {
+  border: 1px solid darkgray;
+  border-collapse: collapse;
+  text-align: center;
+  /* background-color: lightgray; */
+}
+
+.三胜宫tab.年, .三胜宫tab.月 {
+  vertical-align: bottom;
+  width: 15em;
+}
+.三胜宫tab td {
+  width: 1em;
+  vertical-align: top;
+}
+
+.方位 {
+  border: 1px solid darkgray;
+  border-collapse: collapse;
+  text-align: center;
+}
+.方位 > div:nth-of-type(2) {
+  font-size: 70%;
+}
+
+.喜气 {
+  color: white;
+  background-color: red;
+}
+
+.生门 {
+  background-color: lightblue;
+}
+
+.值符 {
+  background-color: rgb(202, 245, 202);
+}
+
+.九天 {
+  background-color: rgb(247, 212, 217);
+}
+
+.六十四卦象 {
+  /* font-size     : .7em; */
+  line-height: 1em;
+  /* padding-top   : 7px; */
+  /* padding-bottom: 7px; */
+}
+
+.六十四卦名 {
+  width: 6em;
+  line-height: unset;
+  font-size: 0.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.other table.日历 div.公历.日 {
+  font-size: 5em;
+  width: 1.5em;
+  text-align: center;
+  font-weight: bolder;
+}
+.other .八字 {
+  font-size: 1.2em;
+}
+.other .八字 .header {
+  font-size: 1em;
+}
+.other table.header.年月 {
+  width: 100%;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+.other table.header.年月 td {
+  width: 50%;
+}
+.other table.header.年月 td div {
+  display: inline-block;
+}
+.other table.header.年月 td > div {
+  width: 100%;
+}
+.other table.月历 table.日历 div {
+  display: inline-block;
+}
+.other table.日历 span.天干.中文, .other table.日历 span.地支.中文 {
+  text-align: left;
+  display: block;
+}
+.other span.天干.中文, .other span.地支.中文 {
+  text-align: center;
+  display: block;
+}
+.other span.天干.拼音, .other span.地支.英文 {
+  font-size: 60%;
+  text-align: center;
+  position: relative;
+  top: -0.7em;
+}
+.other table.万年历.月历 td div.日历.paper {
+  height: 15em;
+  font-weight: bolder;
+}
+.other table.月历 td:first-of-type {
+  vertical-align: top;
+}
+.other table.月历 > td > div:first-of-type {
+  height: 100%;
+}
+.other table.年月 table.万年历 span.天干.拼音, .other table.年月 table.万年历 span.地支.英文 {
+  font-size: 60%;
+  text-align: center;
+  position: relative;
+  top: 0.1em;
+  display: block;
+}
+.other table.年月 td {
+  margin: 2px;
+  height: 100%;
+  width: 4em;
+}
+.other td.button.previous.next {
+  vertical-align: bottom;
+  width: 30em;
+}
+.other .button.export {
+  vertical-align: bottom;
+  width: 10em;
+}
+.other table.年月.干支 td div {
+  margin: 2px;
+  height: 100%;
+  width: 4em;
+  text-align: center;
+}
+.other table.月历 td.header, .other table.年月 td.header {
+  text-align: center;
+  font-weight: bold;
+}
+.other table.月历 td.header.星期 {
+  font-size: 1.3em;
+}
+.other .星期日 {
+  color: red;
+}
+.other .十二值神.成, .other .十二值神.建, .other .十二值神.开, .other .十二值神.执 {
+  color: var(--大吉);
+}
+.other table.日历.语录 {
+  /* position  : relative; */
+  /* top       : 20%; */
+}
+.other div.日历.语录.paper {
+  background: linear-gradient(to bottom, rgb(238, 64, 153), rgb(245, 241, 144), green);
+}
+.other div.日历.语录.paper table {
+  width: 100%;
+}
+.other div.日历.语录.paper table td {
+  width: 100%;
+  text-align: center;
+}
+
+/* 
+#万年历 table.三胜宫,
+#万年历 table.三胜宫 td
+#万年历 table.日历.三胜宫 tr, */
+/* #万年历 td.日历.神煞,
+#万年历 td.三胜宫 {
+    border         : 1px solid darkgray;
+    border-collapse: collapse;
+    text-align     : center;
+} */
+/* #万年历 table.月历,
+#万年历 table.月历 td.月,
+#万年历 table.月历 td.年 {
+    border: 1px solid gray;
+    margin: 5px;
+} */
+/* #万年历 table.年月.干支 td.月,
+#万年历 table.年月.干支 td.年 {
+    margin: 2px;
+    height: 100%;
+    width : 4em;
+} */
+/* #万年历 table.年月 {
+    width: 800px
+} */
+/* #万年历 table.年月 tr,
+#万年历 table.年月 tr div,
+#万年历 table.月历 tr,
+#万年历 table.月历 tr div {
+    height: 100%;
+    margin: 2px;
+} */
+
+/*# sourceMappingURL=calendar.module.css.map */
